@@ -69,15 +69,6 @@ class BasePage:
         """
         self.driver.delete_all_cookies()
 
-    def maximize_window(self):
-        """
-        Maximizes the current browser window.
-
-        Usage:
-            base_page.maximize_window()
-        """
-        self.driver.maximize_window()
-
     def minimize_window(self):
         """
         Minimizes the current browser window.

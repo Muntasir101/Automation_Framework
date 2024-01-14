@@ -1,5 +1,5 @@
-from locators.locators_home_page import HomePageLocators
 from pages.base_page import BasePage
+from locators.locators_home_page import HomePageLocators
 
 
 class HomePage(BasePage):
