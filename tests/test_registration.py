@@ -48,11 +48,21 @@ def test_case1_registration(setup):
 
     # 11. Select checkbox 'Receive special offers from our partners!'
     sign_login_page.click_special_offer()
-    time.sleep(8)
 
     # 12. Fill details: First name, Last name, Company, Address, Address2, Country, State, City, Zipcode, Mobile Number
+    sign_login_page.enter_first_name("John")
+    sign_login_page.enter_last_name("smith")
+    sign_login_page.enter_address1("NY")
+    sign_login_page.enter_address2("land")
+    sign_login_page.select_country("United States")
+    sign_login_page.enter_state("United")
+    sign_login_page.enter_city("United States")
+    sign_login_page.enter_zipcode("12233")
+    sign_login_page.enter_mobile("12345678")
+    time.sleep(3)
 
     # 13. Click 'Create Account button'
+    sign_login_page.click_create_account_button()
 
     # 14. Verify that 'ACCOUNT CREATED!' is visible
 

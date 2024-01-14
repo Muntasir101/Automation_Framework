@@ -39,3 +39,37 @@ class SignupLoginPage(BasePage):
 
     def click_special_offer(self):
         self.click_element(*SignupLoginPageLocators.SPECIAL_OFFER)
+
+    def enter_first_name(self, firstname):
+        self.input_text(*SignupLoginPageLocators.FIRST_NAME, text=firstname)
+
+    def enter_last_name(self, lastname):
+        self.input_text(*SignupLoginPageLocators.LAST_NAME, text=lastname)
+
+    def enter_company(self, company):
+        self.input_text(*SignupLoginPageLocators.COMPANY, text=company)
+
+    def enter_address1(self, address1):
+        self.input_text(*SignupLoginPageLocators.ADDRESS1, text=address1)
+
+    def enter_address2(self, address2):
+        self.input_text(*SignupLoginPageLocators.ADDRESS2, text=address2)
+
+    def select_country(self, value):
+        self.select_dropdown_option_by_value(*SignupLoginPageLocators.COUNTRY, value)
+
+    def enter_state(self, state):
+        self.input_text(*SignupLoginPageLocators.STATE, text=state)
+
+    def enter_city(self, city):
+        self.input_text(*SignupLoginPageLocators.CITY, text=city)
+
+    def enter_zipcode(self, zipcode):
+        self.input_text(*SignupLoginPageLocators.ZIPCODE, text=zipcode)
+
+    def enter_mobile(self, mobile):
+        self.input_text(*SignupLoginPageLocators.MOBILE, text=mobile)
+
+    def click_create_account_button(self):
+        self.click_element(*SignupLoginPageLocators.CREATE_ACCOUNT_BUTTON)
+
