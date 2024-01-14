@@ -1,6 +1,8 @@
 class BrowserConfig:
     # Selenium WebDriver configuration
-    BROWSER = 'chrome'  # Options: 'chrome', 'firefox', etc.
+    BROWSER_NAME = 'chrome'  # Options: 'chrome', 'firefox', etc.
+
+    HEADLESS_MODE = 'false'  # Options: 'false', 'true'
 
     # Default timeout for WebDriverWait
     DEFAULT_TIMEOUT = 10
