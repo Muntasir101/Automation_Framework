@@ -6,3 +6,6 @@ class HomePage(BasePage):
     # define home page actions
     def click_testCases(self):
         self.click_element(*HomePageLocators.TestCases)
+
+    def click_signupLogin(self):
+        self.click_element(*HomePageLocators.SIGNUP_LOGIN)

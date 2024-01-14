@@ -29,7 +29,7 @@ def setup():
     else:
         raise ValueError("Unsupported browser:" + BrowserConfig.BROWSER_NAME)
 
-    driver.get(UrlConfig.HOME_PAGE_URL)
+    # driver.get(UrlConfig.HOME_PAGE_URL)
 
     yield driver
     driver.quit()

@@ -4,11 +4,11 @@ from locators.locators_signup_login_page import SignupLoginPageLocators
 
 class SignupLoginPage(BasePage):
     # define signup page actions
-    def type_name(self):
-        self.input_text(*SignupLoginPageLocators.NEW_USER_NAME, "Admin")
+    def enter_name(self, username):
+        self.input_text(*SignupLoginPageLocators.NEW_USER_NAME, text=username)
 
-    def type_password(self):
-        self.input_text(*SignupLoginPageLocators.NEW_USER_EMAIL, "Admin@mail.com")
+    def enter_email(self, email):
+        self.input_text(*SignupLoginPageLocators.NEW_USER_EMAIL, text=email)
 
-    def click_signupButton(self):
+    def click_signup_button(self):
         self.click_element(*SignupLoginPageLocators.SIGNUP_BUTTON)
