@@ -1,6 +1,5 @@
-class Config:
+class BrowserConfig:
     # Selenium WebDriver configuration
-    DRIVER_PATH = '/path/to/chromedriver'  # Update with your actual path
     BROWSER = 'chrome'  # Options: 'chrome', 'firefox', etc.
 
     # Default timeout for WebDriverWait
