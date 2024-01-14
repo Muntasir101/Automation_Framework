@@ -3,7 +3,6 @@ from pages.base_page import BasePage
 
 
 class HomePage(BasePage):
-
     # define home page actions
-    def login(self, username, password):
+    def click_testCases(self):
         self.click_element(*HomePageLocators.TestCases)
