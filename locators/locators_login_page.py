@@ -13,3 +13,5 @@ class LoginPageLocators:
     LOGIN_PASSWORD = (By.CSS_SELECTOR, "form[method='post'] > input[name='password']")
     LOGIN_BUTTON = (By.CSS_SELECTOR, ".login-form > form[method='post'] > .btn.btn-default")
 
+    LOGIN_ERROR_MESSAGE = (By.CSS_SELECTOR, ".login-form > form[method='post'] > p")
+

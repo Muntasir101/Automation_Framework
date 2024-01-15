@@ -19,6 +19,9 @@ class LoginPage(BasePage):
     def get_new_user_signup_text(self):
         return self.get_element_text(*LoginPageLocators.NEW_USER_SIGNUP)
 
+    def get_login_error_text(self):
+        return self.get_element_text(*LoginPageLocators.LOGIN_ERROR_MESSAGE)
+
     def enter_name(self, username):
         self.input_text(*LoginPageLocators.NEW_USER_NAME, text=username)
 
