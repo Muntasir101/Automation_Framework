@@ -3,12 +3,15 @@ import time
 from pages.base_page import BasePage
 from pages.home_page import HomePage
 from pages.signup_login_page import SignupLoginPage
+from pages.account_created_page import AccountCreatedPage
+from data.create_user import RegistrationData
 
 
 def test_case1_registration(setup):
     sign_login_page = SignupLoginPage(setup)
     home_page = HomePage(setup)
     base_page = BasePage(setup)
+    account_created_page = AccountCreatedPage(setup)
 
     # 1. open home page
     base_page.navigate_to_url("https://automationexercise.com/")
@@ -26,8 +29,8 @@ def test_case1_registration(setup):
     assert sign_login_page.get_new_user_signup_text(), "New User Signup!"
 
     # 6. Enter name and email address
-    sign_login_page.enter_name("Admin")
-    sign_login_page.enter_email("admin@automationexercise.com")
+    sign_login_page.enter_name(RegistrationData.name)
+    sign_login_page.enter_email("admin1@mail.com")
 
     # 7. Click 'Signup' button
     sign_login_page.click_signup_button()
@@ -41,7 +44,6 @@ def test_case1_registration(setup):
     sign_login_page.select_day("20")
     sign_login_page.select_month("5")
     sign_login_page.select_year("2000")
-
 
     # 10. Select checkbox 'Sign up for our newsletter!'
     sign_login_page.click_news_letter()
@@ -65,11 +67,13 @@ def test_case1_registration(setup):
     sign_login_page.click_create_account_button()
 
     # 14. Verify that 'ACCOUNT CREATED!' is visible
+    assert account_created_page.get_account_created_text(), "ACCOUNT CREATED!"
 
     # 15. Click 'Continue' button
+    account_created_page.click_continue_button()
 
     # 16. Verify that 'Logged in as username' is visible
-
+    assert home_page.get_logged_user_name_text(), "Logged in as " + RegistrationData.name
     # 17. Click 'Delete Account' button
 
     # 18. Verify that 'ACCOUNT DELETED!' is visible and click 'Continue' button

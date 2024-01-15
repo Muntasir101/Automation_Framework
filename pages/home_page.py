@@ -9,3 +9,6 @@ class HomePage(BasePage):
 
     def click_signupLogin(self):
         self.click_element(*HomePageLocators.SIGNUP_LOGIN)
+
+    def get_logged_user_name_text(self):
+        return self.get_element_text(*HomePageLocators.LOGGED_IN_USER_NAME)
