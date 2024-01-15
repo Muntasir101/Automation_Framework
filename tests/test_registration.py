@@ -1,19 +1,16 @@
-import time
-
+from data.data_login import LoginData
 from pages.base_page import BasePage
 from pages.home_page import HomePage
 from pages.signup_page import SignupPage
 from pages.login_page import LoginPage
 from pages.account_created_page import AccountCreatedPage
 from pages.delete_account_page import DeleteAccountPage
-from data.create_user import RegistrationData
-from faker import Faker
+from data.data_create_user import RegistrationData
 from config.file_config import FileConfig
 from config.log_config import LoggerConfig
 
 
 def test_case1_registration(setup):
-    fake = Faker()
 
     base_page = BasePage(setup)
 
@@ -27,7 +24,7 @@ def test_case1_registration(setup):
     test_log_instance = LoggerConfig()
 
     # 1. open home page
-    test_log_instance.logger.info("Registration Test start...")
+    test_log_instance.logger.info("test_case1_registration start...")
     base_page.navigate_to_url("https://automationexercise.com/")
     test_log_instance.logger.info("Open home page successfully...")
 
@@ -50,7 +47,7 @@ def test_case1_registration(setup):
 
     # 6. Enter name and email address
     login_page.enter_name(RegistrationData.name)
-    login_page.enter_email(fake.email())
+    login_page.enter_email(RegistrationData.email)
     test_log_instance.logger.info("Enter name and email address successfully..")
 
     # 7. Click 'Signup' button
@@ -83,9 +80,9 @@ def test_case1_registration(setup):
     test_log_instance.logger.info("Select checkbox 'Receive special offers from our partners! successfully..")
 
     # 12. Fill details: First name, Last name, Company, Address, Address2, Country, State, City, Zipcode, Mobile Number
-    signup_page.enter_first_name("John")
+    signup_page.enter_first_name(RegistrationData.name)
     test_log_instance.logger.info("Enter First name successfully..")
-    signup_page.enter_last_name("smith")
+    signup_page.enter_last_name(RegistrationData.name)
     test_log_instance.logger.info("Enter Last name successfully..")
     signup_page.enter_address1("NY")
     test_log_instance.logger.info("Enter Address 1 successfully..")
@@ -116,7 +113,7 @@ def test_case1_registration(setup):
     test_log_instance.logger.info("Click 'Continue' button' successfully..")
 
     # 16. Verify that 'Logged in as username' is visible
-    assert home_page.get_logged_user_name_text(), "Logged in as " + RegistrationData.name
+    assert home_page.get_logged_user_name_text(), "Logged in as " + LoginData.valid_name
     test_log_instance.logger.info("Verify that 'Logged in as username' is visible")
 
     # 17. Click 'Delete Account' button
