@@ -3,7 +3,7 @@ from locators.locators_account_created_page import AccountCreatedLocators
 
 
 class AccountCreatedPage(BasePage):
-    # define home page actions
+    # define account create page actions
     def get_account_created_text(self):
         return self.get_element_text(*AccountCreatedLocators.ACCOUNT_CREATED_TEXT)
 

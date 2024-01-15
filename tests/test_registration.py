@@ -4,14 +4,19 @@ from pages.base_page import BasePage
 from pages.home_page import HomePage
 from pages.signup_login_page import SignupLoginPage
 from pages.account_created_page import AccountCreatedPage
+from pages.delete_account_page import DeleteAccountPage
 from data.create_user import RegistrationData
+from faker import Faker
 
 
 def test_case1_registration(setup):
+    fake = Faker()
+
     sign_login_page = SignupLoginPage(setup)
     home_page = HomePage(setup)
     base_page = BasePage(setup)
     account_created_page = AccountCreatedPage(setup)
+    delete_account_page = DeleteAccountPage(setup)
 
     # 1. open home page
     base_page.navigate_to_url("https://automationexercise.com/")
@@ -30,7 +35,7 @@ def test_case1_registration(setup):
 
     # 6. Enter name and email address
     sign_login_page.enter_name(RegistrationData.name)
-    sign_login_page.enter_email("admin1@mail.com")
+    sign_login_page.enter_email(fake.email())
 
     # 7. Click 'Signup' button
     sign_login_page.click_signup_button()
@@ -74,6 +79,10 @@ def test_case1_registration(setup):
 
     # 16. Verify that 'Logged in as username' is visible
     assert home_page.get_logged_user_name_text(), "Logged in as " + RegistrationData.name
+
     # 17. Click 'Delete Account' button
+    home_page.click_delete_account()
 
     # 18. Verify that 'ACCOUNT DELETED!' is visible and click 'Continue' button
+    assert delete_account_page.get_delete_account_text(), "ACCOUNT DELETED!"
+    delete_account_page.click_continue_button()
