@@ -24,6 +24,11 @@ class LoggerConfig:
         # Add the file handler to the logger
         self.logger.addHandler(self.file_handler)
 
+    def close_logger(self):
+        # Remove the file handler from the logger and close the file handler
+        self.logger.removeHandler(self.file_handler)
+        self.file_handler.close()
+
 
 """
 Example usage:

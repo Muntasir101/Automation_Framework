@@ -24,7 +24,7 @@ def test_case1_registration(setup):
     test_log_instance = LoggerConfig()
 
     # 1. open home page
-    test_log_instance.logger.info("test_case1_registration start...")
+    test_log_instance.logger.info("....Start: test_case1_registration.............")
     base_page.navigate_to_url("https://automationexercise.com/")
     test_log_instance.logger.info("Open home page successfully...")
 
@@ -113,7 +113,7 @@ def test_case1_registration(setup):
     test_log_instance.logger.info("Click 'Continue' button' successfully..")
 
     # 16. Verify that 'Logged in as username' is visible
-    assert home_page.get_logged_user_name_text(), "Logged in as " + LoginData.valid_name
+    assert home_page.get_logged_user_name_text(), "Logged in as " + RegistrationData.name
     test_log_instance.logger.info("Verify that 'Logged in as username' is visible")
 
     # 17. Click 'Delete Account' button
@@ -128,4 +128,5 @@ def test_case1_registration(setup):
     test_log_instance.logger.info("click 'Continue' button successfully..")
 
     test_log_instance.logger.info("All steps complete successfully......")
-    test_log_instance.logger.info("...........................")
+    test_log_instance.logger.info("..........End: test_case1_registration.............")
+    test_log_instance.close_logger()

@@ -16,7 +16,7 @@ def test_case2_login_valid(setup):
     test_log_instance = LoggerConfig()
 
     # 1. open home page
-    test_log_instance.logger.info("..........test_case2_login_valid Start.............")
+    test_log_instance.logger.info("....Start: test_case2_login_valid.............")
     base_page.navigate_to_url("https://automationexercise.com/")
     test_log_instance.logger.info("Open home page successfully...")
 
@@ -65,5 +65,5 @@ def test_case2_login_valid(setup):
     """
 
     test_log_instance.logger.info("All steps complete successfully......")
-    test_log_instance.logger.info("..........test_case2_login_valid END.............")
-    test_log_instance.logger.info(".......................")
+    test_log_instance.logger.info("..........End: test_case2_login_valid.............")
+    test_log_instance.close_logger()

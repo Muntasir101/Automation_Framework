@@ -16,7 +16,7 @@ def test_case3_login_invalid(setup):
 
     # 2. Navigate to url 'http://automationexercise.com'
     base_page.navigate_to_url("https://automationexercise.com/")
-    test_log_instance.logger.info("..........Start: test_case3_login_invalid.............")
+    test_log_instance.logger.info("....Start: test_case3_login_invalid.............")
 
     # 3. Verify that home page is visible successfully
     assert base_page.get_page_title(), "Automation Exercise"
@@ -50,4 +50,4 @@ def test_case3_login_invalid(setup):
 
     test_log_instance.logger.info("All steps complete successfully......")
     test_log_instance.logger.info("..........End: test_case3_login_invalid.............")
-    test_log_instance.logger.info(".......................")
+    test_log_instance.close_logger()

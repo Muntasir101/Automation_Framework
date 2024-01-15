@@ -1,99 +1,57 @@
-
-2024-01-15 21:54:07 - INFO - Registration Test start...
-2024-01-15 21:54:22 - INFO - Open home page successfully...
-2024-01-15 21:54:39 - INFO - Verify home page is visible successfully.
-2024-01-15 21:54:39 - INFO - Click on 'Signup / Login' button successfully..
-2024-01-15 21:54:39 - INFO - Verify 'New User Signup!' is visible successfully..
-2024-01-15 21:54:40 - INFO - Enter name and email address successfully..
-2024-01-15 21:54:40 - INFO - Click 'Signup' button successfully..
-2024-01-15 21:54:41 - INFO - Verify 'ENTER ACCOUNT INFORMATION' is visible successfully..
-2024-01-15 21:54:41 - INFO - Title select successfully..
-2024-01-15 21:54:41 - INFO - Enter Password successfully..
-2024-01-15 21:54:41 - INFO - Select Day successfully..
-2024-01-15 21:54:41 - INFO - Select Month successfully..
-2024-01-15 21:54:41 - INFO - Select Year successfully..
-2024-01-15 21:54:41 - INFO - Select checkbox 'Sign up for our newsletter! successfully..
-2024-01-15 21:54:41 - INFO - Select checkbox 'Receive special offers from our partners! successfully..
-2024-01-15 21:54:41 - INFO - Enter First name successfully..
-2024-01-15 21:54:41 - INFO - Enter Last name successfully..
-2024-01-15 21:54:41 - INFO - Enter Address 1 successfully..
-2024-01-15 21:54:41 - INFO - Enter Address 2 successfully..
-2024-01-15 21:54:42 - INFO - Select Country successfully..
-2024-01-15 21:54:42 - INFO - Enter State successfully..
-2024-01-15 21:54:42 - INFO - Enter City successfully..
-2024-01-15 21:54:42 - INFO - Enter Zipcode successfully..
-2024-01-15 21:54:42 - INFO - Enter Mobile successfully..
-2024-01-15 21:54:48 - INFO - Click 'Create Account button successfully..'
-2024-01-15 21:54:48 - INFO - Verify 'ACCOUNT CREATED!' is visible'
-2024-01-15 21:54:56 - INFO - Click 'Continue' button' successfully..
-2024-01-15 21:54:56 - INFO - Verify that 'Logged in as username' is visible
-2024-01-15 21:54:57 - INFO - Click 'Delete Account' button successfully..
-2024-01-15 21:54:57 - INFO - Verify that 'ACCOUNT DELETED!' is visible
-2024-01-15 21:56:16 - INFO - click 'Continue' button successfully..
-2024-01-15 21:56:16 - INFO - All steps complete successfully......
-2024-01-15 22:28:05 - INFO - Registration Test start...
-2024-01-15 22:28:24 - INFO - Open home page successfully...
-2024-01-15 22:28:31 - INFO - Verify home page is visible successfully.
-2024-01-15 22:28:32 - INFO - Click on 'Signup / Login' button successfully..
-2024-01-15 22:28:32 - INFO - Verify 'New User Signup!' is visible successfully..
-2024-01-15 22:28:33 - INFO - Enter name and email address successfully..
-2024-01-15 22:28:34 - INFO - Click 'Signup' button successfully..
-2024-01-15 22:28:34 - INFO - Verify 'ENTER ACCOUNT INFORMATION' is visible successfully..
-2024-01-15 22:28:34 - INFO - Title select successfully..
-2024-01-15 22:28:34 - INFO - Enter Password successfully..
-2024-01-15 22:28:34 - INFO - Select Day successfully..
-2024-01-15 22:28:34 - INFO - Select Month successfully..
-2024-01-15 22:28:34 - INFO - Select Year successfully..
-2024-01-15 22:28:34 - INFO - Select checkbox 'Sign up for our newsletter! successfully..
-2024-01-15 22:28:34 - INFO - Select checkbox 'Receive special offers from our partners! successfully..
-2024-01-15 22:28:34 - INFO - Enter First name successfully..
-2024-01-15 22:28:35 - INFO - Enter Last name successfully..
-2024-01-15 22:28:35 - INFO - Enter Address 1 successfully..
-2024-01-15 22:28:35 - INFO - Enter Address 2 successfully..
-2024-01-15 22:28:35 - INFO - Select Country successfully..
-2024-01-15 22:28:35 - INFO - Enter State successfully..
-2024-01-15 22:28:35 - INFO - Enter City successfully..
-2024-01-15 22:28:35 - INFO - Enter Zipcode successfully..
-2024-01-15 22:28:35 - INFO - Enter Mobile successfully..
-2024-01-15 22:28:36 - INFO - Click 'Create Account button successfully..'
-2024-01-15 22:28:37 - INFO - Verify 'ACCOUNT CREATED!' is visible'
-2024-01-15 22:28:52 - INFO - Click 'Continue' button' successfully..
-2024-01-15 22:28:52 - INFO - Verify that 'Logged in as username' is visible
-2024-01-15 22:28:53 - INFO - Click 'Delete Account' button successfully..
-2024-01-15 22:28:53 - INFO - Verify that 'ACCOUNT DELETED!' is visible
-2024-01-15 22:29:06 - INFO - click 'Continue' button successfully..
-2024-01-15 22:29:06 - INFO - All steps complete successfully......
-2024-01-15 22:29:06 - INFO - ...........................
-2024-01-15 22:58:39 - INFO - ..........test_case2_login_valid Start.............
-2024-01-15 22:58:57 - INFO - Open home page successfully...
-2024-01-15 22:59:03 - INFO - Verify home page is visible successfully.
-2024-01-15 22:59:04 - INFO - Click on 'Signup / Login' button successfully..
-2024-01-15 22:59:12 - INFO - Verify 'Login to your account' is visible successfully..
-2024-01-15 22:59:12 - INFO - Enter correct Email address successfully..
-2024-01-15 22:59:12 - INFO - Enter correct Password address successfully..
-2024-01-15 22:59:18 - INFO - Click 'login' button successfully..
-2024-01-15 22:59:19 - INFO - Verify that 'Logged in as username' is visible
-2024-01-15 22:59:19 - INFO - All steps complete successfully......
-2024-01-15 22:59:19 - INFO - ..........test_case2_login_valid END.............
-2024-01-15 23:04:12 - INFO - ..........test_case2_login_valid Start.............
-2024-01-15 23:04:22 - INFO - Open home page successfully...
-2024-01-15 23:04:32 - INFO - Verify home page is visible successfully.
-2024-01-15 23:04:34 - INFO - Click on 'Signup / Login' button successfully..
-2024-01-15 23:04:34 - INFO - Verify 'Login to your account' is visible successfully..
-2024-01-15 23:04:34 - INFO - Enter correct Email address successfully..
-2024-01-15 23:04:34 - INFO - Enter correct Password address successfully..
-2024-01-15 23:04:44 - INFO - Click 'login' button successfully..
-2024-01-15 23:04:44 - INFO - Verify that 'Logged in as username' is visible
-2024-01-15 23:04:45 - INFO - All steps complete successfully......
-2024-01-15 23:04:45 - INFO - ..........test_case2_login_valid END.............
-2024-01-15 23:49:11 - INFO - ..........Start: test_case3_login_invalid.............
-2024-01-15 23:49:11 - INFO - Verify home page is visible successfully.
-2024-01-15 23:49:13 - INFO - Click on 'Signup / Login' button successfully..
-2024-01-15 23:49:13 - INFO - Verify 'Login to your account' is visible successfully..
-2024-01-15 23:49:14 - INFO - Enter correct Email address successfully..
-2024-01-15 23:49:14 - INFO - Enter correct Password address successfully..
-2024-01-15 23:49:15 - INFO - Click 'login' button successfully..
-2024-01-15 23:49:15 - INFO - Verify error 'Your email or password is incorrect!' is visible
-2024-01-15 23:49:15 - INFO - All steps complete successfully......
-2024-01-15 23:49:15 - INFO - ..........End: test_case3_login_invalid.............
-2024-01-15 23:49:15 - INFO - .......................
+2024-01-16 00:35:59 - INFO - ....Start: test_home.............
+2024-01-16 00:36:08 - INFO - Home page open successfully..
+2024-01-16 00:36:09 - INFO - ..........End: test_home.............
+2024-01-16 00:36:21 - INFO - ....Start: test_case3_login_invalid.............
+2024-01-16 00:36:21 - INFO - Verify home page is visible successfully.
+2024-01-16 00:36:22 - INFO - Click on 'Signup / Login' button successfully..
+2024-01-16 00:36:22 - INFO - Verify 'Login to your account' is visible successfully..
+2024-01-16 00:36:22 - INFO - Enter correct Email address successfully..
+2024-01-16 00:36:22 - INFO - Enter correct Password address successfully..
+2024-01-16 00:36:23 - INFO - Click 'login' button successfully..
+2024-01-16 00:36:23 - INFO - Verify error 'Your email or password is incorrect!' is visible
+2024-01-16 00:36:23 - INFO - All steps complete successfully......
+2024-01-16 00:36:23 - INFO - ..........End: test_case3_login_invalid.............
+2024-01-16 00:36:31 - INFO - ....Start: test_case2_login_valid.............
+2024-01-16 00:36:38 - INFO - Open home page successfully...
+2024-01-16 00:36:43 - INFO - Verify home page is visible successfully.
+2024-01-16 00:36:43 - INFO - Click on 'Signup / Login' button successfully..
+2024-01-16 00:36:43 - INFO - Verify 'Login to your account' is visible successfully..
+2024-01-16 00:36:44 - INFO - Enter correct Email address successfully..
+2024-01-16 00:36:44 - INFO - Enter correct Password address successfully..
+2024-01-16 00:36:50 - INFO - Click 'login' button successfully..
+2024-01-16 00:36:50 - INFO - Verify that 'Logged in as username' is visible
+2024-01-16 00:36:51 - INFO - All steps complete successfully......
+2024-01-16 00:36:51 - INFO - ..........End: test_case2_login_valid.............
+2024-01-16 00:36:58 - INFO - ....Start: test_case1_registration.............
+2024-01-16 00:37:06 - INFO - Open home page successfully...
+2024-01-16 00:37:12 - INFO - Verify home page is visible successfully.
+2024-01-16 00:37:12 - INFO - Click on 'Signup / Login' button successfully..
+2024-01-16 00:37:13 - INFO - Verify 'New User Signup!' is visible successfully..
+2024-01-16 00:37:13 - INFO - Enter name and email address successfully..
+2024-01-16 00:37:14 - INFO - Click 'Signup' button successfully..
+2024-01-16 00:37:15 - INFO - Verify 'ENTER ACCOUNT INFORMATION' is visible successfully..
+2024-01-16 00:37:15 - INFO - Title select successfully..
+2024-01-16 00:37:15 - INFO - Enter Password successfully..
+2024-01-16 00:37:15 - INFO - Select Day successfully..
+2024-01-16 00:37:15 - INFO - Select Month successfully..
+2024-01-16 00:37:15 - INFO - Select Year successfully..
+2024-01-16 00:37:15 - INFO - Select checkbox 'Sign up for our newsletter! successfully..
+2024-01-16 00:37:15 - INFO - Select checkbox 'Receive special offers from our partners! successfully..
+2024-01-16 00:37:15 - INFO - Enter First name successfully..
+2024-01-16 00:37:15 - INFO - Enter Last name successfully..
+2024-01-16 00:37:16 - INFO - Enter Address 1 successfully..
+2024-01-16 00:37:16 - INFO - Enter Address 2 successfully..
+2024-01-16 00:37:16 - INFO - Select Country successfully..
+2024-01-16 00:37:16 - INFO - Enter State successfully..
+2024-01-16 00:37:16 - INFO - Enter City successfully..
+2024-01-16 00:37:16 - INFO - Enter Zipcode successfully..
+2024-01-16 00:37:16 - INFO - Enter Mobile successfully..
+2024-01-16 00:37:18 - INFO - Click 'Create Account button successfully..'
+2024-01-16 00:37:18 - INFO - Verify 'ACCOUNT CREATED!' is visible'
+2024-01-16 00:37:21 - INFO - Click 'Continue' button' successfully..
+2024-01-16 00:37:21 - INFO - Verify that 'Logged in as username' is visible
+2024-01-16 00:37:22 - INFO - Click 'Delete Account' button successfully..
+2024-01-16 00:37:22 - INFO - Verify that 'ACCOUNT DELETED!' is visible
+2024-01-16 00:37:25 - INFO - click 'Continue' button successfully..
+2024-01-16 00:37:25 - INFO - All steps complete successfully......
+2024-01-16 00:37:25 - INFO - ..........End: test_case1_registration.............
