@@ -9,3 +9,6 @@ venvironment\Scripts\activate
 
 step 4:
 pip install -r requirements.txt
+
+run:
+pytest tests/ --html-report=./reports/report.html
