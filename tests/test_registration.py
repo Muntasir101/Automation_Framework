@@ -1,3 +1,4 @@
+import os
 import time
 
 from pages.base_page import BasePage
@@ -26,12 +27,16 @@ def test_case1_registration(setup):
 
     # 3. Verify that home page is visible successfully
     assert base_page.get_page_title(), "Automation Exercise"
+    base_page.take_screenshot(
+        os.path.join(os.getcwd(), 'Screenshots', 'tc1_registration' + "\\verify_home_page.png"))
 
     # 4. Click on 'Signup / Login' button
     home_page.click_signupLogin()
 
     # 5. Verify 'New User Signup!' is visible
     assert sign_login_page.get_new_user_signup_text(), "New User Signup!"
+    base_page.take_screenshot(
+        os.path.join(os.getcwd(), 'Screenshots', 'tc1_registration' + "\\verify_new_user_signup.png"))
 
     # 6. Enter name and email address
     sign_login_page.enter_name(RegistrationData.name)
@@ -42,6 +47,8 @@ def test_case1_registration(setup):
 
     # 8. Verify that 'ENTER ACCOUNT INFORMATION' is visible
     assert sign_login_page.get_enter_account_information_text(), "Enter Account Information"
+    base_page.take_screenshot(
+        os.path.join(os.getcwd(), 'Screenshots', 'tc1_registration' + "\\verify_enter_account_info.png"))
 
     # 9. Fill details: Title, Name, Email, Password, Date of birth
     sign_login_page.select_title()
@@ -73,6 +80,8 @@ def test_case1_registration(setup):
 
     # 14. Verify that 'ACCOUNT CREATED!' is visible
     assert account_created_page.get_account_created_text(), "ACCOUNT CREATED!"
+    base_page.take_screenshot(
+        os.path.join(os.getcwd(), 'Screenshots', 'tc1_registration' + "\\verify_account_created.png"))
 
     # 15. Click 'Continue' button
     account_created_page.click_continue_button()
@@ -85,4 +94,7 @@ def test_case1_registration(setup):
 
     # 18. Verify that 'ACCOUNT DELETED!' is visible and click 'Continue' button
     assert delete_account_page.get_delete_account_text(), "ACCOUNT DELETED!"
+    base_page.take_screenshot(
+        os.path.join(os.getcwd(), 'Screenshots', 'tc1_registration' + "\\verify_account_deleted.png"))
     delete_account_page.click_continue_button()
+
