@@ -1,0 +1,33 @@
+
+2024-01-15 21:54:07 - INFO - Registration Test start...
+2024-01-15 21:54:22 - INFO - Open home page successfully...
+2024-01-15 21:54:39 - INFO - Verify home page is visible successfully.
+2024-01-15 21:54:39 - INFO - Click on 'Signup / Login' button successfully..
+2024-01-15 21:54:39 - INFO - Verify 'New User Signup!' is visible successfully..
+2024-01-15 21:54:40 - INFO - Enter name and email address successfully..
+2024-01-15 21:54:40 - INFO - Click 'Signup' button successfully..
+2024-01-15 21:54:41 - INFO - Verify 'ENTER ACCOUNT INFORMATION' is visible successfully..
+2024-01-15 21:54:41 - INFO - Title select successfully..
+2024-01-15 21:54:41 - INFO - Enter Password successfully..
+2024-01-15 21:54:41 - INFO - Select Day successfully..
+2024-01-15 21:54:41 - INFO - Select Month successfully..
+2024-01-15 21:54:41 - INFO - Select Year successfully..
+2024-01-15 21:54:41 - INFO - Select checkbox 'Sign up for our newsletter! successfully..
+2024-01-15 21:54:41 - INFO - Select checkbox 'Receive special offers from our partners! successfully..
+2024-01-15 21:54:41 - INFO - Enter First name successfully..
+2024-01-15 21:54:41 - INFO - Enter Last name successfully..
+2024-01-15 21:54:41 - INFO - Enter Address 1 successfully..
+2024-01-15 21:54:41 - INFO - Enter Address 2 successfully..
+2024-01-15 21:54:42 - INFO - Select Country successfully..
+2024-01-15 21:54:42 - INFO - Enter State successfully..
+2024-01-15 21:54:42 - INFO - Enter City successfully..
+2024-01-15 21:54:42 - INFO - Enter Zipcode successfully..
+2024-01-15 21:54:42 - INFO - Enter Mobile successfully..
+2024-01-15 21:54:48 - INFO - Click 'Create Account button successfully..'
+2024-01-15 21:54:48 - INFO - Verify 'ACCOUNT CREATED!' is visible'
+2024-01-15 21:54:56 - INFO - Click 'Continue' button' successfully..
+2024-01-15 21:54:56 - INFO - Verify that 'Logged in as username' is visible
+2024-01-15 21:54:57 - INFO - Click 'Delete Account' button successfully..
+2024-01-15 21:54:57 - INFO - Verify that 'ACCOUNT DELETED!' is visible
+2024-01-15 21:56:16 - INFO - click 'Continue' button successfully..
+2024-01-15 21:56:16 - INFO - All steps complete successfully......
