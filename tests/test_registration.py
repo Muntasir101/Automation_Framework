@@ -2,7 +2,8 @@ import time
 
 from pages.base_page import BasePage
 from pages.home_page import HomePage
-from pages.signup_login_page import SignupLoginPage
+from pages.signup_page import SignupPage
+from pages.login_page import LoginPage
 from pages.account_created_page import AccountCreatedPage
 from pages.delete_account_page import DeleteAccountPage
 from data.create_user import RegistrationData
@@ -14,9 +15,13 @@ from config.log_config import LoggerConfig
 def test_case1_registration(setup):
     fake = Faker()
 
-    sign_login_page = SignupLoginPage(setup)
-    home_page = HomePage(setup)
     base_page = BasePage(setup)
+
+    home_page = HomePage(setup)
+
+    signup_page = SignupPage(setup)
+    login_page = LoginPage(setup)
+
     account_created_page = AccountCreatedPage(setup)
     delete_account_page = DeleteAccountPage(setup)
     test_log_instance = LoggerConfig()
@@ -39,67 +44,66 @@ def test_case1_registration(setup):
     test_log_instance.logger.info("Click on 'Signup / Login' button successfully..")
 
     # 5. Verify 'New User Signup!' is visible
-    assert sign_login_page.get_new_user_signup_text(), "New User Signup!"
+    assert login_page.get_new_user_signup_text(), "New User Signup!"
     base_page.take_screenshot(FileConfig.SCREENSHOT_FILE_LOCATION_TESTCASE1 + "\\verify_new_user_signup.png")
     test_log_instance.logger.info("Verify 'New User Signup!' is visible successfully..")
 
     # 6. Enter name and email address
-    sign_login_page.enter_name(RegistrationData.name)
-    sign_login_page.enter_email(fake.email())
+    login_page.enter_name(RegistrationData.name)
+    login_page.enter_email(fake.email())
     test_log_instance.logger.info("Enter name and email address successfully..")
 
     # 7. Click 'Signup' button
-    sign_login_page.click_signup_button()
+    login_page.click_signup_button()
     test_log_instance.logger.info("Click 'Signup' button successfully..")
 
     # 8. Verify that 'ENTER ACCOUNT INFORMATION' is visible
-    assert sign_login_page.get_enter_account_information_text(), "Enter Account Information"
+    assert signup_page.get_enter_account_information_text(), "Enter Account Information"
     base_page.take_screenshot(FileConfig.SCREENSHOT_FILE_LOCATION_TESTCASE1 + "\\verify_enter_account_info.png")
     test_log_instance.logger.info("Verify 'ENTER ACCOUNT INFORMATION' is visible successfully..")
 
     # 9. Fill details: Title, Name, Email, Password, Date of birth
-    sign_login_page.select_title()
+    signup_page.select_title()
     test_log_instance.logger.info("Title select successfully..")
-    sign_login_page.enter_password("123456")
+    signup_page.enter_password("123456")
     test_log_instance.logger.info("Enter Password successfully..")
-    sign_login_page.select_day("20")
+    signup_page.select_day("20")
     test_log_instance.logger.info("Select Day successfully..")
-    sign_login_page.select_month("5")
+    signup_page.select_month("5")
     test_log_instance.logger.info("Select Month successfully..")
-    sign_login_page.select_year("2000")
+    signup_page.select_year("2000")
     test_log_instance.logger.info("Select Year successfully..")
 
     # 10. Select checkbox 'Sign up for our newsletter!'
-    sign_login_page.click_news_letter()
+    signup_page.click_news_letter()
     test_log_instance.logger.info("Select checkbox 'Sign up for our newsletter! successfully..")
 
     # 11. Select checkbox 'Receive special offers from our partners!'
-    sign_login_page.click_special_offer()
+    signup_page.click_special_offer()
     test_log_instance.logger.info("Select checkbox 'Receive special offers from our partners! successfully..")
 
     # 12. Fill details: First name, Last name, Company, Address, Address2, Country, State, City, Zipcode, Mobile Number
-    sign_login_page.enter_first_name("John")
+    signup_page.enter_first_name("John")
     test_log_instance.logger.info("Enter First name successfully..")
-    sign_login_page.enter_last_name("smith")
+    signup_page.enter_last_name("smith")
     test_log_instance.logger.info("Enter Last name successfully..")
-    sign_login_page.enter_address1("NY")
+    signup_page.enter_address1("NY")
     test_log_instance.logger.info("Enter Address 1 successfully..")
-    sign_login_page.enter_address2("land")
+    signup_page.enter_address2("land")
     test_log_instance.logger.info("Enter Address 2 successfully..")
-    sign_login_page.select_country("United States")
+    signup_page.select_country("United States")
     test_log_instance.logger.info("Select Country successfully..")
-    sign_login_page.enter_state("United")
+    signup_page.enter_state("United")
     test_log_instance.logger.info("Enter State successfully..")
-    sign_login_page.enter_city("United States")
+    signup_page.enter_city("United States")
     test_log_instance.logger.info("Enter City successfully..")
-    sign_login_page.enter_zipcode("12233")
+    signup_page.enter_zipcode("12233")
     test_log_instance.logger.info("Enter Zipcode successfully..")
-    sign_login_page.enter_mobile("12345678")
+    signup_page.enter_mobile("12345678")
     test_log_instance.logger.info("Enter Mobile successfully..")
-    time.sleep(3)
 
     # 13. Click 'Create Account button'
-    sign_login_page.click_create_account_button()
+    signup_page.click_create_account_button()
     test_log_instance.logger.info("Click 'Create Account button successfully..'")
 
     # 14. Verify that 'ACCOUNT CREATED!' is visible
@@ -127,3 +131,4 @@ def test_case1_registration(setup):
     test_log_instance.logger.info("click 'Continue' button successfully..")
 
     test_log_instance.logger.info("All steps complete successfully......")
+    test_log_instance.logger.info("...........................")
