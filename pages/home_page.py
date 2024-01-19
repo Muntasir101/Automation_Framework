@@ -16,3 +16,6 @@ class HomePage(BasePage):
     def click_delete_account(self):
         self.click_element(*HomePageLocators.DELETE_ACCOUNT)
 
+    def click_logout(self):
+        self.click_element(*HomePageLocators.LOGOUT)
+

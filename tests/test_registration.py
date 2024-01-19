@@ -65,6 +65,8 @@ def test_case1_registration(setup):
     signup_page.enter_password("123456")
     test_log_instance.logger.info("Enter Password successfully..")
     signup_page.select_day("20")
+    test_log_instance.logger.info(signup_page.get_day_dropdown_all_options())
+    signup_page.get_day_dropdown_all_options()
     test_log_instance.logger.info("Select Day successfully..")
     signup_page.select_month("5")
     test_log_instance.logger.info("Select Month successfully..")

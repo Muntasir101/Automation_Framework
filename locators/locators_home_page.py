@@ -10,3 +10,5 @@ class HomePageLocators:
 
     DELETE_ACCOUNT = (By.CSS_SELECTOR, ".nav.navbar-nav > li:nth-of-type(5) > a")
 
+    LOGOUT = (By.CSS_SELECTOR, ".nav.navbar-nav > li:nth-of-type(4) > a")
+

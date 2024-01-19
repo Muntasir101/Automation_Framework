@@ -62,3 +62,6 @@ class SignupPage(BasePage):
     def click_create_account_button(self):
         self.click_element(*SignupPageLocators.CREATE_ACCOUNT_BUTTON)
 
+    def get_day_dropdown_all_options(self):
+        self.get_dropdown_options(*SignupPageLocators.DAY)
+
